@@ -1,0 +1,121 @@
+===== M1 deviation ~ supply-month Tmax =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            gen_dev_pct   R-squared:                       0.097
+Model:                            OLS   Adj. R-squared:                  0.077
+Method:                 Least Squares   F-statistic:                     2.576
+Date:                Tue, 06 Oct 2026   Prob (F-statistic):             0.0815
+Time:                        12:49:24   Log-Likelihood:                -284.53
+No. Observations:                  95   AIC:                             575.1
+Df Residuals:                      92   BIC:                             582.7
+Df Model:                           2                                         
+Covariance Type:                  HAC                                         
+=================================================================================
+                    coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -14.1924     11.364     -1.249      0.212     -36.465       8.080
+tmax_c_supply     0.4779      0.373      1.281      0.200      -0.253       1.209
+staggered       -11.0845      5.471     -2.026      0.043     -21.807      -0.362
+==============================================================================
+Omnibus:                        2.589   Durbin-Watson:                   1.451
+Prob(Omnibus):                  0.274   Jarque-Bera (JB):                2.367
+Skew:                          -0.009   Prob(JB):                        0.306
+Kurtosis:                       3.773   Cond. No.                         609.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 3 lags and without small sample correction
+
+===== M2 seasonal + anomaly =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            gen_dev_pct   R-squared:                       0.104
+Model:                            OLS   Adj. R-squared:                  0.074
+Method:                 Least Squares   F-statistic:                     1.973
+Date:                Tue, 06 Oct 2026   Prob (F-statistic):              0.124
+Time:                        12:49:24   Log-Likelihood:                -284.16
+No. Observations:                  95   AIC:                             576.3
+Df Residuals:                      91   BIC:                             586.5
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept          -18.5476     11.979     -1.548      0.122     -42.025       4.930
+tmax_clim_supply     0.6240      0.395      1.579      0.114      -0.151       1.399
+tmax_anom_supply    -0.0292      0.764     -0.038      0.969      -1.526       1.468
+staggered          -10.9545      5.517     -1.986      0.047     -21.767      -0.142
+==============================================================================
+Omnibus:                        2.929   Durbin-Watson:                   1.472
+Prob(Omnibus):                  0.231   Jarque-Bera (JB):                2.871
+Skew:                          -0.041   Prob(JB):                        0.238
+Kurtosis:                       3.848   Cond. No.                         681.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 3 lags and without small sample correction
+
+===== M3 log level ~ Tmax + year FE =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_gen   R-squared:                       0.898
+Model:                            OLS   Adj. R-squared:                  0.886
+Method:                 Least Squares   F-statistic:                     199.7
+Date:                Tue, 06 Oct 2026   Prob (F-statistic):           3.94e-54
+Time:                        12:49:24   Log-Likelihood:                 115.20
+No. Observations:                  95   AIC:                            -208.4
+Df Residuals:                      84   BIC:                            -180.3
+Df Model:                          10                                         
+Covariance Type:                  HAC                                         
+===================================================================================
+                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+Intercept           1.4627      0.174      8.426      0.000       1.122       1.803
+C(year)[T.2019]    -0.0098      0.035     -0.282      0.778      -0.078       0.059
+C(year)[T.2020]    -0.1860      0.026     -7.118      0.000      -0.237      -0.135
+C(year)[T.2021]    -0.0915      0.035     -2.587      0.010      -0.161      -0.022
+C(year)[T.2022]     0.1773      0.049      3.617      0.000       0.081       0.273
+C(year)[T.2023]     0.2906      0.019     15.541      0.000       0.254       0.327
+C(year)[T.2024]     0.2504      0.008     32.812      0.000       0.235       0.265
+C(year)[T.2025]     0.3655      0.021     17.107      0.000       0.324       0.407
+C(year)[T.2026]     0.4922      0.041     12.099      0.000       0.412       0.572
+tmax_c_supply       0.0066      0.006      1.145      0.252      -0.005       0.018
+staggered          -0.1488      0.060     -2.463      0.014      -0.267      -0.030
+==============================================================================
+Omnibus:                        0.260   Durbin-Watson:                   1.036
+Prob(Omnibus):                  0.878   Jarque-Bera (JB):                0.409
+Skew:                          -0.102   Prob(JB):                        0.815
+Kurtosis:                       2.751   Cond. No.                         667.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 3 lags and without small sample correction
+
+===== M4 deviation ~ heat index =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            gen_dev_pct   R-squared:                       0.090
+Model:                            OLS   Adj. R-squared:                  0.070
+Method:                 Least Squares   F-statistic:                     2.299
+Date:                Tue, 06 Oct 2026   Prob (F-statistic):              0.106
+Time:                        12:49:24   Log-Likelihood:                -284.89
+No. Observations:                  95   AIC:                             575.8
+Df Residuals:                      92   BIC:                             583.4
+Df Model:                           2                                         
+Covariance Type:                  HAC                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept              -7.5664      7.744     -0.977      0.329     -22.745       7.612
+heat_index_c_supply     0.2226      0.218      1.019      0.308      -0.205       0.651
+staggered             -10.8577      5.364     -2.024      0.043     -21.370      -0.345
+==============================================================================
+Omnibus:                        1.840   Durbin-Watson:                   1.429
+Prob(Omnibus):                  0.398   Jarque-Bera (JB):                1.362
+Skew:                          -0.025   Prob(JB):                        0.506
+Kurtosis:                       3.584   Cond. No.                         473.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 3 lags and without small sample correction
+
