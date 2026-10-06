@@ -1,0 +1,4 @@
+# Large/re-downloadable raw inputs (re-create with src/fetch_*.py)
+data/raw/meralco_rate_schedules/
+data/raw/RP0000984*.csv
+__pycache__/
