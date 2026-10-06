@@ -1,0 +1,4 @@
+scenario,gen_pct,php_per_kwh,php_per_200kwh_incl_vat
+A. Normal summer (seasonal premium only),1.9,0.18,41
+B. 2024-style tight grid (May-2024 bill jump),7.0,0.68,152
+C. B on top of A,8.8,0.86,192

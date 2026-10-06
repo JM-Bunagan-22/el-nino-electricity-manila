@@ -1,0 +1,503 @@
+{
+  "validation": {
+    "NAIA": {
+      "months": 134,
+      "r_level": 0.969,
+      "r_anomaly": 0.868,
+      "mean_bias_c": -2.66
+    },
+    "Science Garden": {
+      "months": 140,
+      "r_level": 0.964,
+      "r_anomaly": 0.843,
+      "mean_bias_c": -2.1
+    }
+  },
+  "enso_heat_lag": {
+    "best_lag": 5,
+    "r_tmax": 0.339,
+    "r_by_lag": [
+      0.189,
+      0.231,
+      0.259,
+      0.294,
+      0.326,
+      0.339,
+      0.319,
+      0.284,
+      0.249,
+      0.198
+    ]
+  },
+  "dry_season": {
+    "slope_c_per_oni": 0.232,
+    "r2": 0.276,
+    "p": 0.0796,
+    "table": [
+      {
+        "year": 2015,
+        "oni_ndj": 0.662,
+        "mam_tmax_anom": -0.436,
+        "mam_hi_anom": -1.247,
+        "mam_tmax": 31.427
+      },
+      {
+        "year": 2016,
+        "oni_ndj": 2.557,
+        "mam_tmax_anom": 0.566,
+        "mam_hi_anom": 1.171,
+        "mam_tmax": 32.429
+      },
+      {
+        "year": 2017,
+        "oni_ndj": -0.398,
+        "mam_tmax_anom": -0.32,
+        "mam_hi_anom": -0.23,
+        "mam_tmax": 31.543
+      },
+      {
+        "year": 2018,
+        "oni_ndj": -0.835,
+        "mam_tmax_anom": -0.046,
+        "mam_hi_anom": -0.25,
+        "mam_tmax": 31.817
+      },
+      {
+        "year": 2019,
+        "oni_ndj": 0.707,
+        "mam_tmax_anom": -0.025,
+        "mam_hi_anom": -0.068,
+        "mam_tmax": 31.838
+      },
+      {
+        "year": 2020,
+        "oni_ndj": 0.44,
+        "mam_tmax_anom": 0.153,
+        "mam_hi_anom": 0.947,
+        "mam_tmax": 32.016
+      },
+      {
+        "year": 2021,
+        "oni_ndj": -1.168,
+        "mam_tmax_anom": -0.092,
+        "mam_hi_anom": 0.039,
+        "mam_tmax": 31.771
+      },
+      {
+        "year": 2022,
+        "oni_ndj": -0.934,
+        "mam_tmax_anom": -0.481,
+        "mam_hi_anom": -0.531,
+        "mam_tmax": 31.382
+      },
+      {
+        "year": 2023,
+        "oni_ndj": -0.866,
+        "mam_tmax_anom": -0.984,
+        "mam_hi_anom": -1.126,
+        "mam_tmax": 30.879
+      },
+      {
+        "year": 2024,
+        "oni_ndj": 1.89,
+        "mam_tmax_anom": 0.815,
+        "mam_hi_anom": 0.534,
+        "mam_tmax": 32.678
+      },
+      {
+        "year": 2025,
+        "oni_ndj": -0.58,
+        "mam_tmax_anom": 0.463,
+        "mam_hi_anom": 0.548,
+        "mam_tmax": 32.326
+      },
+      {
+        "year": 2026,
+        "oni_ndj": -0.63,
+        "mam_tmax_anom": 0.601,
+        "mam_hi_anom": -0.426,
+        "mam_tmax": 32.464
+      }
+    ]
+  },
+  "price_lag_scan": {
+    "0": 0.123,
+    "1": 0.07,
+    "2": -0.027,
+    "3": 0.012
+  },
+  "price_models": {
+    "n_months": 95,
+    "window": "2018-10 to 2026-09",
+    "m1_pct_per_c": {
+      "coef": 0.478,
+      "ci95": [
+        -0.253,
+        1.209
+      ],
+      "p": 0.2001
+    },
+    "m1_r2": 0.097,
+    "m2_seasonal_pct_per_c": {
+      "coef": 0.624,
+      "ci95": [
+        -0.151,
+        1.399
+      ],
+      "p": 0.1144
+    },
+    "m2_anomaly_pct_per_c": {
+      "coef": -0.029,
+      "ci95": [
+        -1.526,
+        1.468
+      ],
+      "p": 0.9695
+    },
+    "m3_yearFE_pct_per_c": {
+      "coef": 0.657,
+      "ci95": [
+        -0.468,
+        1.782
+      ],
+      "p": 0.2522
+    },
+    "m4_pct_per_c_heat_index": {
+      "coef": 0.223,
+      "ci95": [
+        -0.205,
+        0.651
+      ],
+      "p": 0.308
+    }
+  },
+  "price_bins": {
+    "<29": {
+      "mean_pct": -1.06,
+      "n": 27
+    },
+    "29\u201330": {
+      "mean_pct": -0.53,
+      "n": 25
+    },
+    "30\u201331": {
+      "mean_pct": 1.04,
+      "n": 21
+    },
+    "31\u201332": {
+      "mean_pct": 2.18,
+      "n": 11
+    },
+    "\u226532": {
+      "mean_pct": 1.19,
+      "n": 9
+    }
+  },
+  "seasonal_profile": {
+    "dev": {
+      "1": -1.59,
+      "2": -0.36,
+      "3": -0.44,
+      "4": 1.65,
+      "5": 2.35,
+      "6": 1.66,
+      "7": 1.79,
+      "8": -0.08,
+      "9": -0.22,
+      "10": -1.67,
+      "11": 0.49,
+      "12": -1.52
+    },
+    "t": {
+      "1": 28.75,
+      "2": 28.07,
+      "3": 28.87,
+      "4": 30.68,
+      "5": 32.51,
+      "6": 32.44,
+      "7": 30.9,
+      "8": 29.94,
+      "9": 29.2,
+      "10": 29.42,
+      "11": 29.91,
+      "12": 29.96
+    }
+  },
+  "summer_premium": {
+    "apr_jul_bill_mean_pct": 1.87,
+    "other_mean_pct": -0.66,
+    "diff_pp": 2.53,
+    "welch_p": 0.0065,
+    "n_summer": 30,
+    "n_other": 63,
+    "share_summer_positive": 0.63
+  },
+  "dry_season_bills": [
+    {
+      "year": 2019,
+      "nino34_ndj": 0.71,
+      "mar_may_tmax_anom": -0.03,
+      "apr_jun_bill_gen_dev_pct": 5.59,
+      "apr_jun_bill_gen_charge": 5.533
+    },
+    {
+      "year": 2020,
+      "nino34_ndj": 0.44,
+      "mar_may_tmax_anom": 0.15,
+      "apr_jun_bill_gen_dev_pct": 0.36,
+      "apr_jun_bill_gen_charge": 4.455
+    },
+    {
+      "year": 2021,
+      "nino34_ndj": -1.17,
+      "mar_may_tmax_anom": -0.09,
+      "apr_jun_bill_gen_dev_pct": -2.01,
+      "apr_jun_bill_gen_charge": 4.567
+    },
+    {
+      "year": 2022,
+      "nino34_ndj": -0.93,
+      "mar_may_tmax_anom": -0.48,
+      "apr_jun_bill_gen_dev_pct": 1.44,
+      "apr_jun_bill_gen_charge": 6.22
+    },
+    {
+      "year": 2023,
+      "nino34_ndj": -0.87,
+      "mar_may_tmax_anom": -0.98,
+      "apr_jun_bill_gen_dev_pct": 5.52,
+      "apr_jun_bill_gen_charge": 7.416
+    },
+    {
+      "year": 2024,
+      "nino34_ndj": 1.89,
+      "mar_may_tmax_anom": 0.82,
+      "apr_jun_bill_gen_dev_pct": -8.74,
+      "apr_jun_bill_gen_charge": 6.076
+    },
+    {
+      "year": 2025,
+      "nino34_ndj": -0.58,
+      "mar_may_tmax_anom": 0.46,
+      "apr_jun_bill_gen_dev_pct": 1.21,
+      "apr_jun_bill_gen_charge": 7.533
+    },
+    {
+      "year": 2026,
+      "nino34_ndj": -0.63,
+      "mar_may_tmax_anom": 0.6,
+      "apr_jun_bill_gen_dev_pct": 2.97,
+      "apr_jun_bill_gen_charge": 8.75
+    }
+  ],
+  "outlook": {
+    "base_gen_charge_sep2026": 9.7032,
+    "may2024_mom_pct": 6.97,
+    "expected_mam2027_tmax_anom_by_peak_oni": {
+      "2.0": 0.47,
+      "2.5": 0.58,
+      "3.0": 0.7
+    },
+    "scenarios": [
+      {
+        "scenario": "A. Normal summer (seasonal premium only)",
+        "gen_pct": 1.9,
+        "php_per_kwh": 0.18,
+        "php_per_200kwh_incl_vat": 41
+      },
+      {
+        "scenario": "B. 2024-style tight grid (May-2024 bill jump)",
+        "gen_pct": 7.0,
+        "php_per_kwh": 0.68,
+        "php_per_200kwh_incl_vat": 152
+      },
+      {
+        "scenario": "C. B on top of A",
+        "gen_pct": 8.8,
+        "php_per_kwh": 0.86,
+        "php_per_200kwh_incl_vat": 192
+      }
+    ]
+  },
+  "six_month_outlook": {
+    "temp_model": {
+      "slope_c_per_oni": 0.269,
+      "r2": 0.124,
+      "p": 0.0024,
+      "n": 72
+    },
+    "hi_model": {
+      "slope_c_per_oni": 0.323,
+      "p": 0.0317
+    },
+    "analogs_oct_mar_tmax_anom": {
+      "2015-10": 0.52,
+      "2023-10": 0.53,
+      "2018-10": 0.31
+    },
+    "season_price_model": {
+      "pct_per_oni": 1.32,
+      "p": 0.153,
+      "r2": 0.31,
+      "n_seasons": 8,
+      "seasons": [
+        {
+          "season": 2018,
+          "dev": 1.41,
+          "oni": 0.69
+        },
+        {
+          "season": 2019,
+          "dev": 2.64,
+          "oni": 0.38
+        },
+        {
+          "season": 2020,
+          "dev": -1.5,
+          "oni": -1.01
+        },
+        {
+          "season": 2021,
+          "dev": -2.52,
+          "oni": -0.9
+        },
+        {
+          "season": 2022,
+          "dev": 1.27,
+          "oni": -0.66
+        },
+        {
+          "season": 2023,
+          "dev": 0.91,
+          "oni": 1.68
+        },
+        {
+          "season": 2024,
+          "dev": -0.09,
+          "oni": -0.45
+        },
+        {
+          "season": 2025,
+          "dev": -3.78,
+          "oni": -0.43
+        }
+      ]
+    },
+    "analog_add_at_peak": {
+      "peak_oni": 3.0,
+      "pct": 3.95,
+      "php_kwh": 0.383,
+      "php_200kwh_incl_vat": 86
+    },
+    "rows": [
+      {
+        "weather_month": "2026-10",
+        "bill_month": "2026-11",
+        "oni_5mo_earlier": 0.95,
+        "tmax_anom_c": 0.22,
+        "tmax_anom_80pct": [
+          -0.48,
+          0.93
+        ],
+        "heat_index_anom_c": 0.27,
+        "normal_bill_dev_pct": 0.49,
+        "heat_channel_php_kwh": 0.01,
+        "heat_channel_php_200kwh": 2
+      },
+      {
+        "weather_month": "2026-11",
+        "bill_month": "2026-12",
+        "oni_5mo_earlier": 1.49,
+        "tmax_anom_c": 0.37,
+        "tmax_anom_80pct": [
+          -0.35,
+          1.09
+        ],
+        "heat_index_anom_c": 0.44,
+        "normal_bill_dev_pct": -1.52,
+        "heat_channel_php_kwh": 0.017,
+        "heat_channel_php_200kwh": 4
+      },
+      {
+        "weather_month": "2026-12",
+        "bill_month": "2027-01",
+        "oni_5mo_earlier": 2.05,
+        "tmax_anom_c": 0.52,
+        "tmax_anom_80pct": [
+          -0.21,
+          1.25
+        ],
+        "heat_index_anom_c": 0.62,
+        "normal_bill_dev_pct": -1.59,
+        "heat_channel_php_kwh": 0.024,
+        "heat_channel_php_200kwh": 5
+      },
+      {
+        "weather_month": "2027-01",
+        "bill_month": "2027-02",
+        "oni_5mo_earlier": 2.58,
+        "tmax_anom_c": 0.66,
+        "tmax_anom_80pct": [
+          -0.09,
+          1.42
+        ],
+        "heat_index_anom_c": 0.79,
+        "normal_bill_dev_pct": -0.36,
+        "heat_channel_php_kwh": 0.031,
+        "heat_channel_php_200kwh": 7
+      },
+      {
+        "weather_month": "2027-02",
+        "bill_month": "2027-03",
+        "oni_5mo_earlier": 2.84,
+        "tmax_anom_c": 0.73,
+        "tmax_anom_80pct": [
+          -0.03,
+          1.5
+        ],
+        "heat_index_anom_c": 0.88,
+        "normal_bill_dev_pct": -0.44,
+        "heat_channel_php_kwh": 0.034,
+        "heat_channel_php_200kwh": 8
+      },
+      {
+        "weather_month": "2027-03",
+        "bill_month": "2027-04",
+        "oni_5mo_earlier": 3.0,
+        "tmax_anom_c": 0.78,
+        "tmax_anom_80pct": [
+          0.01,
+          1.55
+        ],
+        "heat_index_anom_c": 0.93,
+        "normal_bill_dev_pct": 1.65,
+        "heat_channel_php_kwh": 0.036,
+        "heat_channel_php_200kwh": 8
+      }
+    ]
+  },
+  "oni_peaks": {
+    "2015_16": 2.56,
+    "2023_24": 1.89,
+    "latest": [
+      "2026-09",
+      2.84
+    ],
+    "last_6": {
+      "2026-04": 0.47,
+      "2026-05": 0.95,
+      "2026-06": 1.49,
+      "2026-07": 2.05,
+      "2026-08": 2.58,
+      "2026-09": 2.84
+    }
+  },
+  "hottest_months": {
+    "2024-04": 34.02,
+    "2026-05": 33.91,
+    "2014-05": 33.88,
+    "2018-05": 33.46,
+    "2025-04": 33.46,
+    "2024-05": 33.46
+  }
+}
